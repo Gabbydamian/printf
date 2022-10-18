@@ -2,7 +2,7 @@
 
 /**
  * _print_hex_upp - converts an integer to uppercase hexadecimal
- * @x: integer to be converted
+ * @c: integer to be converted
  */
 
 void _print_hex_upp(int c)

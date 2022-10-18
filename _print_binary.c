@@ -1,18 +1,15 @@
 #include "main.h"
 /**
  * * _print_binary - prints binary
- * * @x:paramater or member 'x'
+ * * @c:paramater or member 'c'
  **/
-void _print_binary(int x)
+void _print_binary(int c)
 {
-if (x < 0)
-{
-putchar('-');
-x = -x;
-}
-if (x / 2)
-{
-_print_binary(x / 2);
-}
-putchar(x % 2 + '0');
+	unsigned int x = c;
+
+	if (x / 2)
+	{
+		_print_binary(x / 2);
+	}
+	putchar(x % 2 + '0');
 }
