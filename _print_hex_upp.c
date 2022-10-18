@@ -5,9 +5,10 @@
  * @x: integer to be converted
  */
 
-void _print_hex_upp(int x)
+void _print_hex_upp(int c)
 {
 	int rem, i = 0;
+	unsigned int x = c;
 	char hexarr[100];
 
 	while (x != 0)

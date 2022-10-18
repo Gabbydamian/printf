@@ -7,7 +7,7 @@ void _print_int(int x)
 {
 	if (x < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		x = -x;
 	}
 	if (x / 10)

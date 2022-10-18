@@ -7,12 +7,13 @@
 
 void _print_hex_low(int x)
 {
+unsigned int c = x;
 	int rem, i = 0;
 	char hexarr[100];
 
-	while (x != 0)
+	while (c != 0)
 	{
-		rem = x % 16;
+		rem = c % 16;
 
 		if (rem < 10)
 			rem += 48;
@@ -20,7 +21,7 @@ void _print_hex_low(int x)
 			rem += 87;
 		hexarr[i] = rem;
 		i++;
-		x = x / 16;
+		c = c / 16;
 	}
 	for (i = (i - 1); i >= 0; i--)
 	{
