@@ -14,6 +14,8 @@ void _print_string(char x[]);
 void _print_binary(int x);
 void _print_hex_upp(int x);
 void _print_hex_low(int x);
+void _print_octal(int x);
+void _print_un_int(int x);
 int _putchar(char c);
 
 #endif

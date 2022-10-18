@@ -43,6 +43,12 @@ int _printf(const char *format, ...)
 				case 'x':
 					_print_hex_low(va_arg(args, int));
 					break;
+				case 'u':
+					_print_un_int(va_arg(args, int));
+					break;
+				case 'o':
+					_print_octal(va_arg(args, int));
+					break;
 				default:
 					putchar(copy[i + 1]);
 			}
